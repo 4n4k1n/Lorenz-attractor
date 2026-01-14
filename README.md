@@ -2,6 +2,8 @@
 
 A simple C program that simulates and visualizes the famous Lorenz attractor in your terminal.
 
+![Lorenz Attractor](Screenshot%20From%202026-01-14%2022-24-14.png)
+
 ## What is the Lorenz Attractor?
 
 The Lorenz attractor is a chaotic system discovered by Edward Lorenz in 1963. It shows how small changes in starting conditions can lead to dramatically different results over time (the "butterfly effect").
