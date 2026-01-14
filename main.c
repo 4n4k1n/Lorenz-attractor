@@ -20,6 +20,10 @@ int main(void) {
 	// Time step size for simulation
 	double dt = 0.01;
 
+	// Clear screen once at the start
+	printf("\033[2J");
+	printf("\033[H");
+
 	// Infinite loop to continuously update and draw
 	while (true) {
 
@@ -37,12 +41,11 @@ int main(void) {
 		int term_x = (int)(x * 2 + 40);
 		int term_y = (int)(z * 1 + 12);
 
-		// Clear screen and draw a star at the current position
-		printf("\033[2J");
+		// Draw a star at the current position (without clearing)
 		printf("\033[%d;%dH*", term_y, term_x);
 		fflush(stdout);
 
 		// Wait 70ms before next frame
-		usleep(70000);
+		usleep(10000);
 	}
 }
